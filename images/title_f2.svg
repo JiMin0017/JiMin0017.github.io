@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 687 323" style="enable-background:new 0 0 687 323;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#40413f;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	#p
+	{
+		stroke-dasharray: 620; 
+		stroke-dashoffset: -620;
+		animation: pani  0.5s linear 0s forwards;}
+
+	#o
+	{
+		stroke-dasharray: 460; 
+		stroke-dashoffset: -460;
+		animation: o-anim 0.5s linear 0.5s 	forwards;}
+
+	#t
+	 {
+		 stroke-dasharray: 600; 
+		 stroke-dashoffset: -600;
+		 animation: t1-anim 0.5s linear 0.8s 	forwards;}
+
+	#f {
+		stroke-dasharray : 800;
+		stroke-dashoffset: -800;
+		animation: f-anim 0.5s linear 1.2s forwards;
+	}
+
+	#o2 {
+		stroke-dasharray : 450;
+		stroke-dashoffset: -450;
+		animation: o-anim 0.5s linear 1.6s forwards;
+	}
+
+	#l {
+		stroke-dasharray : 650;
+		stroke-dashoffset: -650;
+		animation: f-anim 0.5s linear 1.8s forwards;
+	}
+
+	#i {
+		stroke-dasharray : 300;
+		stroke-dashoffset: -300;
+		animation: o-anim 0.5s linear 2s forwards;
+	}
+
+	#o3 {
+		stroke-dasharray : 450;
+		stroke-dashoffset: -450;
+		animation: o-anim 0.5s linear 2.3s forwards;
+	}
+
+	@keyframes pani {
+	  from {stroke-dashoffset : 620px;}
+	  to {stroke-dashoffset : 0px;}
+	}
+	@keyframes o-anim {
+	  from {stroke-dashoffset : 450px;}
+	  to {stroke-dashoffset : 0px;}
+	}
+	@keyframes t1-anim {
+	  from {stroke-dashoffset : 600px;}
+	  to {stroke-dashoffset : 0px;}
+	}
+	@keyframes f-anim {
+	  from {stroke-dashoffset : 800px;}
+	  to {stroke-dashoffset : 0px;}
+	}
+</style>
+<path id="p" class="st0" d="M44.5,154.5c0,0,9-29,9-34s9,202-29,189c-12.37-4.23-11.08-22.77-9.96-32.89
+	c2.26-20.46,8.96-40.54,16.49-59.6c7.71-19.54,16.84-38.85,28.4-56.44c5.44-8.27,10.96-18.45,20.77-22.35
+	c10.58-4.21,16.76,8.46,17.12,17.22c0.37,8.76-2.49,18.29-7.99,25.18c-6.77,8.48-16.42,8.95-23.83,0.89c0,0,38.48,37.99,68.5-27.5"
+	/>
+<path id="o" class="st0" d="M148.81,140.78c0,0-35.63,19.39-10.81,43.22c25,24,61-40,32.69-47.74
+	c-24.35-6.66-1.07,68.08,38.31,21.74"/>
+<path id="t" class="st0" d="M209,158c0,0,24-35,4-40c-9.89-2.47-19.75,24,13.12,20S216,190,252,188s78-126,52-137
+	s-28,142,9.35,137.05c0,0,16.65-0.05,26.65-24.05"/>
+<path id="f" class="st0" d="M340,164c0,0,65-112,31-144s-32,278-16,284s38.84-33.18-4.08-100.09c0,0,47.78-24.31,49.08-43.91"/>
+<path id="o2" class="st0" d="M416,139c0,0-33,26-9,45c23,18.2,56.44-19.13,36.16-44.06c-2.08-2.55-5.13-4.14-8.42-4.13
+	c-5.31,0.01-11.54,3.33-3.74,22.19c12,29,50,8,51-5"/>
+<path id="l" class="st0" d="M482.94,151.58C482.94,151.58,537,40,508,20s-48.9,202.34,8.55,168.17c0,0,13.45-6.17,23.45-33.17"/>
+<path id="i" class="st0" d="M543.44,131.87c-0.21,1.17-0.39,2.35-0.56,3.53c-0.44,3-0.8,6.01-1.09,9.02
+	c-0.39,4.04-0.64,8.1-0.7,12.15c-0.07,4.31,0.06,8.64,0.59,12.93c0.47,3.86,1.25,7.76,2.79,11.34c1.26,2.92,3.12,5.73,5.9,7.4
+	c3.87,2.31,8.19,1.45,12.33,0.59c8.17-1.68,15.07-6.18,20.69-12.24c0.34-0.36,0.67-0.73,0.99-1.1c4.98-5.66,8.88-12.22,12.07-19.03
+	c0.54-1.15,1.06-2.31,1.55-3.47"/>
+<path id="o3" class="st0" d="M606.35,138.78c0,0-33.16,45.34,4.65,50.22c31,4,40.98-52.38,18.99-55.19
+	C608,131,617.61,177.28,649,171c20-4,21-20,21-20"/>
+</svg>

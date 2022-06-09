@@ -1,0 +1,1287 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.9rem;
+    background-color: #fffcef;
+    color : #4a4a4a;
+}
+.nav_popup::after {
+    clear: both; content : ""; display : block;
+}
+.nav_popup {
+    margin-right: -1000px;
+    position : fixed;
+    top : 0;
+    right : 0;
+    width : 30%;
+    height : 100%;
+    background-color: #fffcef;
+    z-index : 9999;
+    padding: 30px;
+}
+
+.nav_popup > ul {
+    float : left;
+}
+
+.nav_popup > ul > li::before {
+    content : "";
+    display : block;
+    position: absolute;
+    width : 0px;
+    height : 20px;
+    background-color: #e4ddc0;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition : all 0.4s ease;
+}
+
+.nav_popup > ul > li:hover::before {
+    width : 150px;
+}
+.nav_popup > ul > li {
+    font-size: 2.5rem;
+    font-family: 'GmarketSans',serif;
+    line-height: 4;
+    position : relative;
+    transition : all 0.3s ease-in-out;
+}
+
+.close {
+    float : right;
+    background: url(../images/close.png) no-repeat;
+    background-size: cover;
+    width : 30px;
+    height : 30px;
+    border: none;
+    outline: none;
+    margin-right: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.bg_shadow {
+    display : none;
+    position : fixed;
+    width : 100%;
+    height : 100%;
+    top : 0;
+    left : 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    transition : all 0.2s ease;
+}
+
+.menu {
+    display : none;
+    background: url(../images/menu.png) no-repeat;
+    background-size: cover;
+    width : 50px;
+    height : 50px;
+    float : right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+button > span {
+    display : none;
+}
+main {
+    padding : 30px;
+    background: url(../images/pat.png);
+    overflow: hidden;
+}
+a {
+    display : block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrap {
+    margin : 0 150px;
+    padding : 150px 0;
+}
+
+.ft_wrap {
+    margin : 0 150px;
+}
+
+#header {
+    padding : 0 150px;
+    height : 10rem;
+    border-bottom: 1.5px solid #4a4a4a;
+}
+#header::after {
+    content : ""; display : block; clear: both;
+}
+#header > a {
+    float : left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#nav {
+    float : right;
+    width : 54%;
+}
+
+#nav > li {
+    float : left;
+    width : 25%;
+    text-align: center;
+    line-height: 10rem;
+    font-family: 'GmarketSans',serif;
+    font-size: 1.6rem;
+    position : relative;
+}
+#nav > li::before {
+    content : "";
+    display : block;
+    position: absolute;
+    width : 0px;
+    height : 20px;
+    background-color: #e4ddc0;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition : all 0.4s ease;
+}
+
+#nav > li:hover::before {
+    width : 150px;
+}
+
+ h1 {
+    font-family: 'InkLipquid',serif;
+    font-size: 7rem;
+    color : #5e5c5c;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 99;
+ }
+
+ h1::before {
+     position : absolute;
+     content : "";
+     display : block;
+     width : 200px;
+     height : 50px;
+     background-color: white;
+     top : 30%;
+     left : 50%;
+     transform: translateX(-50%);
+     z-index: -1;
+     opacity: 0.8;
+ }
+
+
+.wrap::after {
+    content : ""; display : block; clear : both;
+}
+.main_img {
+    display : block;
+    margin: 100px auto;
+    margin-bottom: 200px;
+    width : 70%;
+
+    transform: rotate(-1deg);
+    position: relative;
+}
+
+.main_img > img {
+    width : 100%;
+    border: 13px solid white;
+    border-bottom: 75px solid white;
+    box-shadow : 8px 16px 16px hsl(0deg 0% 0% / 0.25);
+    box-sizing: border-box;
+}
+
+.main_img::before {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 130px;
+    background: url(../images/tape.png) no-repeat;
+    background-size: cover;
+    top : -60px;
+    left : -10px;
+    transform: rotate(-45deg);
+    z-index: 99;
+}
+
+.main_img::after {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 130px;
+    background: url(../images/tape.png) no-repeat;
+    background-size: cover;
+    top : -60px;
+    right : -10px;
+    transform: rotate(45deg);
+    z-index: 99;
+}
+/* 공유, 공효진 */
+.actor {
+    transition : all 0.2s  ease-in-out;
+}
+.act_1 {
+    float : left;
+    width : 40%;
+    position: relative;
+    transform: rotate(-7deg);
+
+}
+
+.act_2 {
+    float : right;
+    width : 40%;
+    transform: rotate(5deg);
+}
+
+.actor > a {
+    display : block;
+    width : 100%;
+    position: relative;
+}
+
+.actor > a > img{
+    border: 13px solid white;
+    border-bottom: 75px solid white;
+    box-shadow : 8px 16px 16px hsl(0deg 0% 0% / 0.25);
+}
+
+.act_1::before {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 130px;
+    background: url(../images/tape.png) no-repeat;
+    background-size: cover;
+    top : -60px;
+    left : -10px;
+    transform: rotate(45deg);
+    z-index: 99;
+}
+
+.act_1::after {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 130px;
+    background: url(../images/tape.png) no-repeat;
+    background-size: cover;
+    top : -60px;
+    right : -10px;
+    transform: rotate(-45deg);
+    z-index: 99;
+}
+
+.actor > a > span {
+    position: absolute;
+    font-size: 2.6rem;
+    display : block;
+    bottom : 25px;
+    left : 20px;
+    font-family: 'InkLipquid';
+    color : #5e5c5c;
+}
+.actor:hover {
+    transform: rotate(0deg);
+}
+.actor > a > img {
+    display : block;
+    width : 100%;
+    box-sizing: border-box;
+}
+
+.act_2::before {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 100px;
+    background: url(../images/tape2.png) no-repeat;
+    background-size: cover;
+    top : -70px;
+    left : 40%;
+    transform: translateX(-50%);
+    transform: rotate(-5deg);
+    z-index: 99;
+}
+
+/*전도연*/
+.daisy {
+    float : left;
+    width : 17%;
+    margin-top: 150px;
+    margin-left: -10px;
+    transform: rotate(-15deg);
+
+}
+
+.daisy > img {
+    display : block;
+    width : 100%;
+}
+
+.daisy::before {
+    display : block;
+    content : "";
+    position: absolute;
+    width : 45px;
+    height : 120px;
+    background: url(../images/tape.png) no-repeat;
+    background-size: cover;
+    transform: rotate(100deg);
+    top : 50%;
+    left : 20%;
+}
+
+.p {
+    width : 30%;
+    float : right;
+    font-family: 'InkLipquid';
+    font-size: 4.5rem;
+    text-align: center;
+    margin-top: -350px;
+    transform: rotate(10deg);
+    margin-right: -50px;
+    padding: 5px;
+}
+
+.p > p {
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.first::before {
+    content : "";
+    display : block;
+    position: absolute;
+    width : 70%;
+    height : 30px;
+    background-color: #f7dee8;
+    top : 15px;
+    left : 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.second::before {
+    content : "";
+    display : block;
+    position: absolute;
+    width : 50%;
+    height : 30px;
+    background-color: #f7dee8;
+    top : 15px;
+    left : 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.8;
+}
+.wrap_2 {
+    margin-top: -300px;
+}
+
+.act_3 {
+    width : 40%;
+    margin: 0 auto;
+    position: relative;
+    transform: rotate(10deg);
+}
+
+
+.act_3::before {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 100px;
+    background: url(../images/tape2.png) no-repeat;
+    background-size: cover;
+    top : -70px;
+    left : 50%;
+    transform: translateX(-50%);
+    transform: rotate(-5deg);
+    z-index: 99;
+}
+
+
+/*최우식, 수지, 남주혁*/
+.wrap_3 {
+    margin-top: -150px;
+}
+
+.act_4 {
+    width : 32%;
+    float : left;
+    transform: rotate(8deg);
+}
+
+.act_4::before {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 130px;
+    background: url(../images/tape.png) no-repeat;
+    background-size: cover;
+    top : -60px;
+    left : -10px;
+    transform: rotate(-45deg);
+    z-index: 99;
+}
+
+.act_4::after {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 130px;
+    background: url(../images/tape.png) no-repeat;
+    background-size: cover;
+    bottom : -50px;
+    right :-20px;
+    transform: rotate(-45deg);
+    z-index: 99;
+}
+
+
+.act_5::before {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 100px;
+    background: url(../images/tape2.png) no-repeat;
+    background-size: cover;
+    top : -70px;
+    left : 40%;
+    transform: translateX(-50%);
+    transform: rotate(-5deg);
+    z-index: 99;
+}
+
+.act_5 {
+    float : left;
+    padding : 0 1%;
+    width : 32%;
+    transform: rotate(3deg);
+}
+
+.act_6 {
+    width : 32%;
+    float : left;
+    transform: rotate(-10deg);
+}
+
+.act_6::before {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 130px;
+    background: url(../images/tape.png) no-repeat;
+    background-size: cover;
+    top : -60px;
+    right : -10px;
+    transform: rotate(-45deg);
+    z-index: 99;
+} 
+
+.act_6::after {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 130px;
+    background: url(../images/tape.png) no-repeat;
+    background-size: cover;
+    bottom : -50px;
+    right :-20px;
+    transform: rotate(45deg);
+    z-index: 99;
+}
+
+/*정유미 서현진*/
+.wrap_4 {
+    position: relative;
+}
+
+.wrap_4::before {
+    position: absolute;
+    top : -10%;
+    left : -10%;
+    display : block;
+    content : "";
+    width : 1000px;
+    height : 500px;
+    background: url(../images/leaf2.png) no-repeat;
+}
+.act_7 {
+    float : left;
+    width : 40%;
+    margin-left: 3%;
+    transform: rotate(7deg);
+}
+
+.act_8 {
+    float : right;
+    width : 40%;
+    margin-right: 3%;
+    transform: rotate(-7deg);
+}
+
+.act_7::before {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 100px;
+    background: url(../images/tape2.png) no-repeat;
+    background-size: cover;
+    top : -70px;
+    left : 40%;
+    transform: translateX(-50%);
+    transform: rotate(-5deg);
+    z-index: 99;
+}
+
+.act_8::before {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 130px;
+    background: url(../images/tape2.png) no-repeat;
+    background-size: cover;
+    top : -60px;
+    left : -10px;
+    transform: rotate(45deg);
+    z-index: 99;
+}
+
+.act_8::after {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 130px;
+    background: url(../images/tape2.png) no-repeat;
+    background-size: cover;
+    top : -60px;
+    right : -10px;
+    transform: rotate(-45deg);
+    z-index: 99;
+}
+
+/*김재욱 남지현*/
+.wrap_5 {
+    margin-top: -300px;
+    background: url(../images/leaf.png) no-repeat;
+    background-position: right 0 bottom 0;
+    position: relative;
+}
+
+.wrap_5::before {
+    position: absolute;
+    display: block;
+    content : "";
+    background: url(../images/daisy2.png) no-repeat;
+    background-size: contain;
+    width : 250px;
+    height : 270px;
+    top : 0;
+    left : 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+
+}
+.act_9 {
+    float : left;
+    width : 35%;
+    margin-left: 10%;
+    transform: rotate(-10deg);
+}
+
+.act_9::after {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 130px;
+    background: url(../images/tape.png) no-repeat;
+    background-size: cover;
+    bottom : -60px;
+    left : -10px;
+    transform: rotate(-45deg);
+    z-index: 99;
+}
+
+.act_10 {
+    float : right;
+    width : 30%;
+    margin-right: 10%;
+    margin-top: -5%;
+    transform: rotate(7deg);
+}
+
+.act_10::before {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 130px;
+    background: url(../images/tape2.png) no-repeat;
+    background-size: cover;
+    top : -60px;
+    right : -10px;
+    transform: rotate(-45deg);
+    z-index: 99;
+}
+
+/*ArtWork*/
+.art {
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.art::before {
+    position : absolute;
+    content : "";
+    display : block;
+    width : 500px;
+    height : 50px;
+    background-color: rgb(224, 234, 250);
+    top : 30%;
+    left : 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.8;
+}
+.artwork_list {
+    width : 100%;
+}
+
+.artwork_list::after {
+    content : ""; display : block; clear: both;
+}
+
+.artwork_list > li {
+    float : left;
+    box-sizing: border-box;
+    width : 25%;
+    padding : 0 10px;
+    position: relative;
+}
+
+.artwork_list > li:hover {
+    transform: rotate(3deg);
+}
+.artwork_list > li > a > img {
+    box-sizing: border-box;
+    display : block;
+    width : 100%;
+    border: 13px solid white;
+    border-bottom: 75px solid white;
+    box-shadow : 8px 16px 16px hsl(0deg 0% 0% / 0.25);
+
+}
+
+.artwork_list > li > a > span {
+    position: absolute;
+    font-size: 2.7rem;
+    display : block;
+    bottom : 25px;
+    left : 50%;
+    transform: translateX(-50%);
+    font-family: 'InkLipquid';
+    color : #5e5c5c;
+}
+
+.artwork_list > li::before {
+    display : block;
+    position: absolute;
+    content : "";
+    width: 45px;
+    height: 90px;
+    background: url(../images/tape.png) no-repeat;
+    background-size: cover;
+    top : -70px;
+    left : 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+
+/* FOOTER */
+#footer {
+    padding : 80px 0;
+    border-top: 1.5px solid #4a4a4a;
+
+}
+#footer > .ft_wrap::after {
+    content: ""; display : block; clear: both;
+}
+
+#ft_txt {
+    float : left;
+}
+
+#ft_txt {
+    font-family: 'GmarketSans',serif;
+    line-height: 1.6;
+}
+
+#footer > .ft_wrap > img {
+    display : block;
+    float : right;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+@media screen and (min-width : 768px) and (max-width : 1123px) {
+#nav {
+    display : none;
+}
+
+.menu {
+    display : block;
+}
+.main_img {
+    margin-bottom: 100px;
+}
+
+.main_img::before {
+    width: 31px;
+    height: 97px;
+    top : -40px;
+}
+
+.main_img::after {
+    width: 31px;
+    height: 97px;
+    top : -40px;
+    right : -20px;
+}
+
+.wrap {
+    margin: 0 30px;
+    padding-top : 120px;
+    padding-bottom: 0;
+}
+
+.wrap_2 {
+    margin-top: -50px;
+}
+
+.wrap_3 {
+    margin-top: 50px;
+}
+.actor > a >span {
+    font-size: 1.8rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+ h1::before {
+     width : 150px;
+     height : 40px;
+ }
+
+ .first::before {
+    width : 180px;
+    height : 20px;
+}
+
+.second::before {
+    width : 110px;
+    height : 20px;
+}
+
+ .p {
+     font-size: 4rem;
+     margin-top: -250px;
+ }
+
+ .act_1::before {
+    width: 31px;
+    height: 97px;
+    top : -40px;
+}
+
+.act_1::after {
+    width: 31px;
+    height: 97px;
+    top : -40px;
+}
+
+.act_2::before {
+    width: 31px;
+    height: 70px;
+    top : -40px;
+}
+
+.act_3::before {
+    width: 31px;
+    height: 70px;
+    top : -40px;
+    left : 40%;
+}
+.daisy::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 97px;
+    background: url(../images/tape.png) no-repeat;
+    background-size: cover;
+    transform: rotate(100deg);
+    top: 40%;
+    left: 20%;
+}
+.act_4::before {
+    width: 31px;
+    height: 97px;
+    top : -40px;
+}
+
+.act_4::after {
+    width: 31px;
+    height: 97px;
+}
+
+.act_5::before {
+    width: 31px;
+    height: 70px;
+    top : -40px;
+    left : 40%;
+}
+
+.act_6::before {
+    width: 31px;
+    height: 97px;
+    top : -40px;
+}
+
+.act_6::after {
+    width: 31px;
+    height: 97px;
+    bottom : -40px;
+}
+
+.act_7::before {
+    width: 31px;
+    height: 70px;
+    top : -40px;
+    left : 40%;
+}
+
+.act_8::before {
+    width: 31px;
+    height: 97px;
+    top : -40px;
+}
+
+.act_8::after {
+    width: 31px;
+    height: 97px;
+    top : -40px;
+}
+
+.act_9::after {
+    width: 31px;
+    height: 97px;
+    bottom : -40px;
+}
+
+.act_10::before {
+    width: 31px;
+    height: 97px;
+    top : -40px;
+}
+
+.daisy {
+    margin-top: 80px;
+}
+
+.wrap_4 {
+    margin-top: 100px;
+}
+
+.wrap_4::before {
+    position: absolute;
+    top : -10px;
+    left : -20%;
+    display : block;
+    content : "";
+    width : 700px;
+    height : 300px;
+    background: url(../images/leaf2.png) no-repeat;
+    background-size: contain;
+}
+
+.wrap_5 {
+    margin-top: -50px;
+    background: url(../images/leaf.png) no-repeat;
+    background-size: 360px 229px;
+    background-position: right 0 bottom 0;
+    position: relative;
+}
+
+.wrap_5::before {
+    position: absolute;
+    display: block;
+    content : "";
+    background: url(../images/daisy2.png) no-repeat;
+    background-size: contain;
+    width : 150px;
+    height : 170px;
+    top : 0;
+    left : 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.wrap_6 {
+    padding: 80px 0;
+}
+
+.art {
+    margin-bottom: 80px;
+}
+.art::before {
+    width : 300px;
+    height : 30px;
+}
+
+.artwork_list > li::before {
+    width: 31px;
+    height: 60px;
+    top : -40px;
+
+}
+
+.artwork_list > li > a > span {
+    position: absolute;
+    font-size: 2rem;
+    display : block;
+    bottom : 25px;
+    left : 50%;
+    transform: translateX(-50%);
+    font-family: 'InkLipquid';
+    color : #5e5c5c;
+}
+
+#footer > .ft_wrap::after {
+    display :none;
+}
+#ft_txt {
+    float : none;
+}
+#footer > .ft_wrap > img {
+    float : none;
+    margin : 0 auto;
+    margin-top: 50px;
+}
+
+}/**/
+
+
+
+@media screen and (max-width : 767px) {
+    #nav {
+        display : none;
+    }
+    
+    .menu {
+        display : block;
+    }
+
+
+    .main_img {
+        width : 100%;
+        margin-bottom: 100px;
+    }
+
+    .main_img::before {
+        width: 31px;
+        height: 97px;
+        top : -40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .main_img::after {
+        display : none;
+    }
+    .wrap {
+        margin : 0 20px;
+        padding : 50px 0;
+    }
+
+    .wrap::after {
+        display : none;
+    }
+    #header {
+        padding : 0 20px;
+    }
+
+    .nav_popup {
+        width : 50%;
+    }
+
+    .nav_popup > ul > li {
+        font-size: 1.8rem;
+    }
+
+    .close {
+        margin-right: 0;
+    }
+    .ft_wrap {
+        margin : 0 40px;
+    }
+    #footer > .ft_wrap::after {
+        display :none;
+    }
+    #ft_txt {
+        float : none;
+    }
+    #footer > .ft_wrap > img {
+        float : none;
+        margin : 0 auto;
+        margin-top: 50px;
+    }
+    .p {
+        display : none;
+    }
+
+    .daisy {
+        display : none;
+    }
+    .actor > a >span {
+        font-size: 2.7rem;
+    }
+
+    .actor {
+        float : none;
+        transform: rotate(0);
+        width : 90%;
+        margin: 0 auto;
+    }
+    
+    .actor:hover {
+        transform: rotate(5deg);
+    }
+  
+    h1 {
+        font-size: 6rem;
+        margin-bottom: 50px;
+    }
+    h1::before {
+        width: 150px;
+        height: 30px;
+    }
+
+    .act_1 {
+        margin-bottom: 100px;
+    }
+
+    .act_1::before {
+        width : 31px;
+        height : 70px;
+        top : -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .act_1::after {
+        display : none;
+    }
+    
+    .act_2::before {
+        width : 31px;
+        height : 70px;
+        top : -30px;
+        left : 50%;
+        transform: translateX(-50%);
+    }
+    .act_3::before {
+        width : 31px;
+        height : 70px;
+        top : -30px;
+        left : 50%;
+        transform: translateX(-50%);
+    }
+    .act_4 {
+        
+        margin-bottom: 100px;
+    }
+
+
+    .act_4::before {
+        width : 31px;
+        height : 70px;
+        top : -30px;
+         left : 50%;
+        transform: translateX(-50%);
+    }
+    
+    .act_4::after {
+        
+        display: none;
+    }
+    
+    .act_5::before {
+        width : 31px;
+        height : 70px;
+        top : -30px;
+        left : 50%;
+        transform: translateX(-50%);
+    }
+    
+    .act_5 {    
+        margin-bottom: 100px;
+    }
+    .act_6::before {
+        width : 31px;
+        height : 70px;
+        top : -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .act_6::after {
+        display : none;
+    }
+    
+    .act_7 {
+        margin-bottom: 100px;
+    }
+    .act_7::before {
+        width : 31px;
+        height : 70px;
+        top : -30px;
+        left : 50%;
+        transform: translateX(-50%);
+    }
+    
+    .act_8::before {
+        width : 31px;
+        height : 70px;
+        top : -30px;
+        left : 50%;
+        transform: translateX(-50%);
+    }
+    
+    .act_8::after {
+        display: none;
+    }
+
+    .wrap_5::before {
+        display: none;
+    }
+    
+    .act_9::after {
+        width : 31px;
+        height : 70px;
+        top : -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .act_9 {
+        margin-bottom : 100px;
+    }
+    
+    .act_10::before {
+        width : 31px;
+        height : 70px;
+        top : -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .wrap_5 {
+        background: url(../images/leaf.png) no-repeat;
+        background-size: 300px 120px;
+        background-position: right 0 bottom 0;
+        position: relative;
+    }
+    
+
+    .wrap_4::before {
+        position: absolute;
+        top :-2%;
+        left : -20%;
+        display : block;
+        width : 320px;
+        height : 150px;
+        content : "";
+        background: url(../images/leaf2.png) no-repeat;
+        background-size: contain;
+    }
+
+    .artwork_list > li {
+        float : none;
+        width : 80%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .art {
+        margin-bottom: 80px;
+        font-size: 4rem;
+    }
+
+    .art::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 300px;
+        height: 30px;
+        background-color: rgb(224, 234, 250);
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        opacity: 0.8;
+    }
+
+
+    .artwork_list > li::before {
+        width: 31px;
+        height: 70px;
+        top: -40px;
+    }
+
+    #footer {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}/**/

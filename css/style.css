@@ -1,0 +1,778 @@
+
+html {
+        font-size: 62.5%;
+}
+
+body {
+        font-family: 'IM_Hyemin',sans-serif,serif;
+        color : #5e5e5e;
+        box-sizing: border-box;
+        letter-spacing: -0.5px;
+        font-size: 1.6rem;
+}
+
+a {
+        text-decoration: none;
+        display : block;
+        color : inherit;
+}
+
+section {
+        height : 100vh;
+        overflow : hidden;
+}
+
+.wrap {
+        box-sizing: border-box;
+        max-width : 1500px;
+        margin : 0 auto;
+        padding : 4rem 0;
+}
+
+/* HOME 시작 */
+#home {
+        background-color: #f4eaf5;
+        position : relative;
+}
+
+#nav {
+        width : 70%;
+        height : 10rem;
+        margin : 0 auto;
+}
+#nav > ul::after {
+        clear: both; content: ""; display : block;
+}
+
+#nav > ul > li {
+        font-family: 'NEXON';
+        float : left;
+        width : 25%;
+        font-size: 1.8rem;
+}
+
+#nav > ul > li > a {
+        text-align: center;
+        line-height: 10rem;
+        position : relative;
+        z-index: 99;
+}
+
+#nav > ul > li > a::before{
+        display : block;
+        position : absolute;
+        content : "";
+        width : 0;
+        height : 7px;
+        background-color: #dbb8cd;
+        bottom : 0%;
+        left : 50%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+}
+
+#nav > ul > li > a:hover::before {
+        width : 50%;
+}
+
+#home_p {
+        position: absolute;
+        top : 50%;
+        left : 50%;
+        transform: translate(-50%, -50%);
+        font-size : 2rem;
+}
+
+#home_title > img{
+        display : block;
+        width : 650px;
+        height : auto;
+}
+
+#home_p > p {
+        line-height: 3;
+        font-weight: 900;
+        text-align: center;
+}
+
+/* RESUME 시작 */
+#resume {
+        background-color: #dbb8cd;
+        font-size : 1.2em;
+}
+
+.title {
+        font-family: 'NEXON';
+        font-size: 3.5rem;
+        width : 100%;
+        text-align: center;
+        padding: 2em 0 ;
+        color : #40413f;
+}
+
+.info_title {
+        width : 100%;
+        border-bottom : 2px solid #7e5161;
+        font-family: 'NEXON';
+        color : #7e5161;
+        font-size: 2.8rem;
+        line-height: 2.5;
+        margin-bottom : 1em;
+}
+
+.resume_wrap {
+        box-sizing: border-box;
+        max-width : 1500px;
+        margin : 0 auto;
+}
+
+.resume_wrap::after { display : block; content: ""; clear: both;}
+
+.resume_wrap > div {
+        box-sizing: border-box;
+        width : 32%;
+        float: left;
+        padding : 1% 3%;
+}
+
+.list > li {
+        line-height : 2em;
+        color : #6c6a6b;
+        font-weight: 900;
+        font-size: 2rem;
+}
+
+.list > li > span {
+        font-size: 2rem;
+        padding-right : 3rem;
+        font-family: 'IM_Hyemin-Bold';
+        color : #7e5161;
+}
+
+#illust > img {
+        display : block;
+        max-width : 100%;
+        margin-left : 20%;
+        margin-top : 5%;
+}
+
+#interest > .list > li::after { display : block; content: ""; clear: both;}
+
+.icon {
+        display : block;
+         float : left;
+        width : 20%;
+        margin-bottom : 1em;
+        }
+
+.list > li > .txt { 
+        display : block;
+        float : left;
+        font-family: 'IM_Hyemin';
+        color : #6c6a6b;
+}
+
+
+#skill > .list > li::after { display : block; content: ""; clear: both;} 
+
+.list > li {
+        width : 100%;
+}
+
+
+.list > li > .li_txt {
+        display : block;
+        float : left;
+        padding-right : 0;
+}
+
+.skill_bar {
+        float : right;
+        margin-top: 10px;
+}
+
+.skill_bar::after {
+        clear: both; content : ""; display : block;
+}
+
+.skill_bar > li { 
+        float : left;
+        width : 15px;
+        height : 15px;
+        border-radius: 50%;
+        margin-left: 20px;
+}
+
+.color {
+        background-color: white;
+}
+.empty {
+        box-sizing: border-box;
+        background-color: transparent;
+        border : 2px solid white;
+}
+
+.last { 
+        margin-top : 5.5em;
+}
+
+#skill {
+        margin-top : -6em;
+}
+
+#interest {
+        margin-top : -3em;
+}
+
+/* Portfolio 시작 */
+#portfolio {
+        height : 100%;
+        background-color: #f4eaf5;
+}
+
+.port_title {
+        font-size : 1.5em;
+        font-family: 'NEXON';
+        margin : 2em 1em;
+}
+
+.port_box {
+        width : 100%;
+        margin : 5em 0;
+        font-weight: 600;
+}
+
+.port_box::after{ display: block; clear: both; content: "";}
+
+.first {
+        margin-top : 0;
+}
+.img_box_left{
+        width : 50%;
+        float : left;
+}
+
+.img_box_right {
+        float : right;
+        width : 50%;
+}
+
+.text_box_left {
+        width : 50%;
+        float : left;
+        padding : 2em;
+        padding-right : 4em;
+        box-sizing: border-box;
+        text-align: right;
+}
+
+.text_box_right {
+        width : 50%;
+        float : right;
+        padding : 2em;
+        padding-left : 4em;
+        box-sizing: border-box;
+
+}
+
+.img {
+        display : block;
+        width : 100%;
+        box-sizing: border-box;
+        border: 10px solid white;
+}
+
+.port_box > div > h3 {
+        font-size : 1.3em;
+        font-family: 'IM_Hyemin-Bold';
+        margin : 2em 0;
+}
+
+.port_box > div > p {
+        margin-bottom: 2em;
+        line-height: 1.8em;
+}
+
+#portfolio > .wrap > div > div > a:hover {
+        transition : 0.4s;
+        opacity: 0.5;
+}
+
+/* ARTWORK 시작*/
+#banner_list {
+        width : 100%;
+        padding-bottom : 8em;
+}
+
+#banner_list::after { display : block; content: ""; clear: both;}
+
+#banner_list > li {
+        float : left;
+        width : 30%;
+        box-sizing: border-box;
+        margin : 1%;
+        border: 10px solid white;
+}
+
+
+#banner_list > li > img {
+        cursor: zoom-in;
+        display : block;
+        width : 100%;
+}
+
+#overlay {
+        position : fixed;
+        top : 0;
+        left : 0;
+        right : 0;
+        bottom : 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        display : none;
+}
+
+#photo {
+        position : absolute;
+        top : 50%;
+        left : 50%;
+        transform: translate(-50%, -50%);
+        border: 8px solid white;
+        max-width : 100%;
+        max-height : 100%;
+        display : none;
+}
+
+#overlay > button {
+        border: none;
+        outline: none;
+        padding : 0;
+        background-color: transparent;
+        cursor: pointer;
+}
+
+#overlay > button > span {
+        display : none;
+}
+
+#close {
+        position : absolute;
+        top : 5em;
+        right : 5em;
+        width : 2em;
+        height : 2em;
+        background : url("https://i.imgur.com/kdX2tNQ.png") no-repeat;
+        background-size : cover;
+}
+/* CONTACT 시작 */
+#contact > h1 { padding : 1.5em 0;}
+
+#contact {
+        max-width : 100%;
+        height : 70vh;
+        background-color: #dbb8cd;
+}
+
+#con_bg {
+        box-sizing: border-box;
+        background : url("../images/thank.png") no-repeat center/contain;
+        max-width : 1000px;
+        height : 70%;
+        padding-top : 10%;
+        margin : 0 auto;
+        position : relative;
+}
+
+
+#con_bg::after {display: block; content: ""; clear: both;}
+
+
+#contact > div > h1 {
+        padding :1.5em 0;
+}
+
+
+.con {  
+        width : 50%;
+        float : left;
+        text-align: center;
+}
+
+
+.con_title {
+        font-family: 'NEXON';
+        font-size : 1.5em;
+        line-height: 2em;
+}
+
+.con > p {
+        color : white;
+        font-size : 1.5em;
+}
+
+#thank {
+        max-width : 100%;
+        text-align: center;
+        font-size: 1.3em;
+        color : white;
+        margin-top : -1.5em;
+}
+
+.margin-left { margin-left : -800px;}
+.margin-right { margin-right : -800px;}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------*/
+@media screen and (min-width : 768px) and (max-width : 1023px) {
+
+        #resume {
+                height : 120vh;
+                font-size: 1rem;
+        }
+        
+        .wrap {
+                box-sizing: border-box;
+                max-width : 700px;
+                height : 100%;
+                margin : 0 auto;
+                padding : 1em 0;
+        }
+
+        
+        #nav {
+                width : 60%;
+                font-size : 0.8em;
+        }
+
+        #home_p {
+                font-size : 1.7rem;
+        }
+        
+        .title {
+                font-size: 3.3rem;
+                padding: 5rem 0;
+        }
+
+        #resume {
+                font-size : 0.9em;
+        }
+        
+        #resume::after { display:  block; clear: both; content: "";}
+
+        .resume_wrap {
+                box-sizing: border-box;
+                width : 50%;
+                height : 89%;
+                float : left;
+                padding : 0 1em;
+        }
+        
+
+        .resume_wrap > div {
+                box-sizing: border-box;
+                width : 100%;
+                height : 35%;
+                float: none;
+                padding : 1em 2em;
+        }
+        
+
+        #illust { margin-top : -5em;}
+
+        #illust > img {
+                display : block;
+                max-width : 100%;
+                max-height : 100%;
+                margin : 0 auto;
+        }
+
+
+        .last { 
+                margin-top : 0em;
+        }
+        
+        #interest {
+                height : 30%;
+                margin-top : 0em;
+        }
+        
+        #certi {
+                height : 30%;
+        }
+        #edu { margin-top : 0em;}
+
+        #edu > .list > li > span {
+                display : block;
+        }
+
+        .text_box_left {
+                width : 100%;
+                float : none;
+                padding : 1em;
+                box-sizing: border-box;
+                text-align: left;
+        }
+        
+        .text_box_right {
+                width : 100%;
+                float : none;
+                padding : 1em;
+                box-sizing: border-box;
+        
+        }
+
+        .img_box_left{
+                width : 100%;
+                float : none;
+        }
+        
+        .img_box_right {
+                float : none;
+                width : 100%;
+        }
+        
+        .port_title { 
+                font-size : 2.5rem;
+                width : 100%;
+                text-align: center;
+                margin : 0;
+                line-height: 3;
+        }
+
+        .margin-left {
+                margin-left: 0;
+        }
+        .margin-right {
+                margin-right: 0;
+        }
+        #banner_list { padding-bottom : 2em;}
+
+        #banner_list > li {
+                width : 47.7%;
+        }
+        .first {
+                margin : 0;
+        }
+
+        #con_bg {
+                max-width : 700px;
+                padding-top : 12em;
+        }
+
+
+        #skill {
+                margin-top: 0;
+        }
+
+        .info_title {
+                font-size: 2.2rem;
+        }
+        .skill_bar {
+                margin-top: 5px;
+                margin-right : 10px;
+        }
+
+        #skill > .list > li > .li_txt {
+                font-size: 1.6rem;
+        }
+}
+
+/*--------------------------------------------*/
+@media screen and (max-width : 767px) {
+
+        .wrap { 
+                width : 100%;
+                padding : 1em 0;
+        }
+
+        #nav { 
+                width : 100%;
+        }
+
+        #nav > ul > li {
+                font-size: 1.3rem;
+        }
+
+        #intro { 
+                font-size : 1.3rem;
+                width : 100%;
+        }
+
+        .title {
+                font-size : 2.7rem;
+                padding-top: 40px;
+                width : 100%;
+                text-align: center;
+        }
+
+
+        .port_title {
+
+                padding-bottom: 20px;
+        }
+
+        .info_title {
+                font-size: 2.2rem;
+        }
+
+        #edu > .list > li > span {
+                display : block;
+        }
+        #home_p {
+                position: relative;
+                font-size : 1.3em;
+                padding : 2em;
+                margin-top : -5em;
+        }
+        
+        #home_title > img{
+                display : block;
+                max-width : 100%;
+        }
+        
+        #home_p > p {
+                line-height: 5em;
+                font-weight: 900;
+                text-align: center;
+        }
+
+        #resume {
+                width : 100%;
+                height : 100%;
+        }
+
+        .last { margin : 0;}
+
+        #about, #interest, #edu, #skill{ 
+                margin: 0;
+        }
+
+        .resume_wrap {
+                box-sizing: border-box;
+                float : none;
+                width : 100%;
+                height : auto;
+                padding : 1em;
+                font-size: 0.7em;
+        }
+        
+        .resume_wrap > div {
+                box-sizing: border-box;
+                width : 100%;
+                padding : 20px 10px;
+                float: none;
+        }
+        
+        .resume_wrap > div > ul > li{
+                font-size: 1.5rem;
+        }
+
+        .resume_wrap > div > ul > li > span {
+                font-size: 1.5rem;
+        }
+        .skill_bar {
+                margin-right: 10px;
+        }
+        .skill_bar > li {
+                width : 10px;
+                height : 10px;
+        }
+
+        #illust > img {
+                display : block;
+                width : 50%;
+                margin : 0 auto;
+        }
+
+    
+
+        .text_box_left {
+                width : 100%;
+                float : none;
+                padding : 3em;
+                box-sizing: border-box;
+                text-align: left;
+        }
+        
+        .text_box_right {
+                width : 100%;
+                float : none;
+                padding : 3em;
+                box-sizing: border-box;
+        
+        }
+        .port_box > div > h3 { margin : 1em 0;}
+
+        .img_box_left{
+                        width : 90%;
+                        float : none;
+                        padding : 0 20px;
+        }
+
+        .img_box_right {
+                float : none;
+                width : 90%;
+                padding : 0 20px;
+        }
+        .margin-left {margin-left: 0;}
+        .margin-right {margin-right : 0;}
+        .port_title { 
+                font-size : 2.2rem;
+                width : 100%;
+                text-align: center;
+                margin : 0;
+                line-height: 2em;
+        }
+        .port_box {
+                font-size : 0.8em;
+                margin : 2em 0;
+        }
+
+        br { display : none;}
+
+        #banner_list { padding-bottom : 0;}
+
+        #banner_list > li {
+                box-sizing: border-box;
+                float : none;
+                margin: 0 auto;
+                margin-bottom : 1em;
+                width : 90%;
+        }
+
+        .first {
+                margin : 0;
+        }
+
+        #con_bg {
+                width : 100%;
+                font-size: 0.8em;
+
+        }
+        .con {  
+                width : 100%;
+                height : 50%;
+                float : none;
+                text-align: center;
+        }
+        
+        
+        
+        #thank {
+                max-width : 100%;
+                text-align: center;
+                font-size: 1.3rem;
+                color : white;
+                margin-top : -1.5em;
+        }
+        
+}

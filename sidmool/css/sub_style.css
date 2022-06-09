@@ -1,0 +1,286 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'NEXON',serif;
+    color : #40413f;
+    font-size: 1.6rem;
+}
+
+/* HEADER */
+#header {
+    width : 100%;
+    height : 8rem;
+    background-color: #fff;
+    padding : 0 3em;
+    box-sizing: border-box;
+}
+
+#header::after {
+    display : block; content: ""; clear: both;
+}
+#logo {
+    display : block;
+    float : left;
+}
+
+#logo > img {
+    display : block;
+    padding-left : 3em;
+}
+#nav {
+    font-family: 'GowunBatang-Regular',sans-serif;
+    width : 60%;
+    line-height: 5em;
+    margin : 0 auto;
+}
+
+#nav::after {
+    content: ""; display : block; clear: both;
+}
+#nav > li {
+    float : left;
+    width : 20%;
+    text-align: center;
+}
+
+#nav > li > a {
+    display : block;
+    color : inherit;
+    text-decoration: none;
+    position : relative;
+    z-index: 999;
+}
+
+#nav > li > a::before {
+    content :"";
+    position : absolute;
+    display : block;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    background: #a2c38e;
+    opacity: 0;
+    transform: scaleX(.3);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+
+}
+
+#nav > li > a:hover::before {
+    opacity: 1;
+    background-color: #a2c38e;
+    transform: scaleX(1);
+}
+
+#nav > li > a:hover {
+    color : white;
+}
+/* MainBanner */
+#main_banner {
+    height : 95vh;
+    background: url(../images/sub_banner.jpg) no-repeat;
+    background-size: cover;
+    line-height: 1.6;
+    color: white;
+    position: relative;
+}
+
+#main_txt {
+    position: absolute;
+    top : 60%;
+    left : 15rem;
+    opacity: 0;
+}
+#main_txt > h1 {
+    font-size: 6rem;
+    line-height: 1.4;
+    font-family: 'GowunBatang-Regular',sans-serif;
+}
+
+#main_txt > span {
+    font-size: 3rem;
+    font-family: 'GowunBatang-Regular',sans-serif;
+    border-bottom: 1.5px solid white;
+}
+
+#main_txt > p {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+
+}
+
+/* Banner */
+#banner {
+    background: url(../images/sub_bannerbg.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#banner > img {
+    display : block;
+    margin: 0 auto;
+    padding-top :135px; 
+    margin-bottom: 4rem;
+}
+
+#banner > p {
+    color: #706d6d;
+    font-size: 1.9rem;
+    line-height: 1.6;
+    padding-bottom: 135px;
+}
+
+/* Value */
+#value_wrap {
+    box-sizing: border-box;
+    padding : 150px;
+}
+
+#value_wrap::after {
+    content : ""; display : block; clear: both;
+}
+#value_wrap > div {
+    box-sizing: border-box;
+    float : left;
+    width : 33.33%;
+    padding : 1.5rem;
+    margin-top: 150px;
+    opacity: 0;
+}
+
+#value_wrap > div > img {
+    display : block;
+    width : 100%;
+}
+
+
+#value_wrap > div > h3 {
+    color : #706d6d;
+    font-size : 3rem;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 6rem;
+}
+
+#value_wrap > div > p {
+    color: #706d6d;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+/* beauty */
+#beauty_wrap {
+    width: 100%;
+    max-width : 1320px;
+    margin: 0 auto;
+    padding-top: 600px;
+    opacity: 0;
+}
+
+#beauty_wrap::after {
+    content: ""; display: block; clear: both;
+}
+.left {
+    float : left;
+    width : 50%;
+    box-sizing: border-box;
+    padding : 0 6rem;
+}
+
+.right {
+    float: right;
+    width : 50%;
+    box-sizing: border-box;
+    padding:0  6rem;
+}
+
+#beauty_wrap > div > img{
+    display : block;
+    width: 100%;
+}
+
+.right > h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-weight: 200;
+}
+
+.right > p {
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    font-weight: 200;
+}
+
+#nature {
+    margin : 200px 0;
+    text-align: center;
+}
+
+#nature > h1 {
+    color : #706d6d;
+    font-family: 'YESMyoungjo-Bold',sans-serif;
+    font-size: 5rem;
+    letter-spacing: 2rem;
+    margin: 6rem 0;
+}
+
+.typing_text{}
+
+#nature > h2 {
+    font-size: 21px;
+    line-height: 1.3;
+    margin-bottom: 4rem;
+}
+
+#nature > p {
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+/* PRODUCT BANNER */
+
+#pro_banner { font-size: 0;}
+
+#pro_banner::after {
+    display: block; content: ""; clear: both;
+}
+#pro_banner > div {
+    float: left;
+}
+
+#first_img {
+    width : 57.29%;
+}
+
+#last_img {
+    width : 42.71%;
+}
+#pro_banner > div > a > img {
+    width: 100%;
+}
+#pro_banner > div > a {
+    display : block;
+}
+
+/*footer*/
+#footer {
+    background-color: #7b7d75;
+    color : white;
+    padding : 2rem 0;
+}
+
+.ft_wrap {
+    width : 1300px;
+    margin : 0 auto;
+}
+
+#footer > .ft_wrap > p {
+    letter-spacing: 0;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}

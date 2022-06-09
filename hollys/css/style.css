@@ -1,0 +1,529 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    color : #444240;
+    font-size: 1.6rem;
+}
+
+a {
+    color : inherit;
+    text-decoration: none;
+    display : block;
+}
+
+.wrap {
+    width : 1300px;
+    margin: 0 auto;
+    padding : 2em 0;
+}
+
+.title {
+    font-family: 'Myungjo_title',serif;
+    font-size : 4rem;
+    text-align: center; 
+}
+
+.title2 {
+    font-family: 'Myungjo_title',serif;
+    font-size: 4.5rem;
+    padding-bottom : 3.5rem;
+
+}
+
+.p {
+    font-size : 1.5em;
+}
+/* home 시작 */
+#home{
+    position : relative;
+}
+
+#nav {
+    width : 100%;
+    height : 10rem;
+    background-color: rgba(0,0,0, 0.3);
+    color : white;
+    position: fixed;
+    top : 0;
+    left : 0;
+    transition: top 0.5s ease-in-out;
+}
+
+#nav > ul {
+    width : 70%;
+    height : 10rem;
+    margin: 0 auto;
+}
+
+#nav > ul::after {
+    display : block; content: ""; clear: both;
+}
+
+#nav > ul > li  {
+    float: left;
+    width : 20%;
+}
+
+#nav > ul > li > a {
+    display : block;
+    text-align: center;
+    line-height: 10rem;
+}
+
+#logo {
+    padding-top : 30px;
+}
+
+.gnb {
+    position: relative;
+}
+.gnb::after {
+    position: absolute;
+    top : 95%;
+    left : 50%;
+    transform: translateX(-50%);
+    content: "";
+    display : block;
+    width : 0;
+    height : 5px;
+    background-color: white;
+    transition : all 0.5s;
+}
+
+.gnb:hover::after {
+    width : 50%;
+}
+
+#mainbanner_slide {
+    width : 100%;
+    overflow: hidden;
+}
+
+#mainbanner_slide > ul {
+    width : 300vw;
+}
+
+#mainbanner_slide > ul::after {
+    display : block; clear: both; content: "";
+}
+#mainbanner_slide > ul > li {
+    float : left;
+    width : 33.33%;
+}
+
+#mainbanner_slide > ul > li > a > img {
+    display : block;
+    width : 100%;
+}
+
+.btn {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    padding: 0;
+}
+
+button > span {
+    display : none;
+}
+
+.main_prev {
+    background: url(../images/prev.png) no-repeat;
+    width : 50px;
+    height : 80px;
+    position : absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    left : 5%;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+.main_next {
+    background: url(../images/next.png) no-repeat;
+    width : 50px;
+    height : 80px;
+    position : absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    right : 5%;
+    cursor: pointer;
+    opacity: 0.5;
+    transition-duration : 200ms;
+}
+
+.main_prev:hover{
+    opacity: 1;
+} 
+.main_next:hover {
+    opacity: 1;
+}
+
+.nav-up {
+    top : -10rem!important;
+}
+/* intro 시작 */
+#intro {
+    text-align: center;
+
+}
+
+#intro > .wrap > h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+    padding-top: 8rem;
+}
+
+#intro > .wrap > .title {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+#intro > .wrap > .title::before {
+    content: "";
+    display : block;
+    width : 300px;
+    height : 0;
+    border-top: 2px solid #333333;
+    position : absolute;
+    top : 50%;
+    left :  10%;
+}
+
+#intro > .wrap > .title::after {
+    content: "";
+    display : block;
+    width : 300px;
+    height : 0;
+    border-top: 2px solid #333333;
+    position : absolute;
+    top : 50%;
+    right :  10%;
+}
+#intro > .wrap > p {
+    font-weight: 400;
+    padding-bottom: 8rem;
+}
+
+/* competition 시작 */
+
+#competition {
+    max-width : 100%;
+    background-color: #ede2d8;
+
+}
+
+#competition >.wrap > .title {
+    line-height: 3;
+    margin-top: 5rem;
+    color : #8e7a6b;
+ 
+}
+
+#competition > .wrap > p {
+    font-size : 2rem;
+    text-align: center;
+    color : #47423f;
+}
+
+.com_wrap {
+    margin: 8rem 0;
+}
+
+.com_wrap::after{ content: ""; display : block; clear: both;}
+
+.left {
+    float : left;
+    margin-left : 6rem;
+}
+
+.right {
+    float : right;
+    text-align: right;
+    margin-right : 6rem;
+}
+
+.txt > h3 {
+    line-height: 3em;
+    margin-bottom: 3em;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.txt > h3::after {
+    content: "";
+    display : block;
+    width : 100px;
+    border-top : 1.5px solid #333;
+}
+
+.com_title2::after{
+    position: absolute;
+    right : 0;
+}
+
+.first {
+    margin-bottom: 5rem;
+    font-weight: 600;
+}
+
+.second {
+    margin-top :  10em;
+}
+
+
+
+.txt > p {
+    margin-bottom:4rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.view {
+    display : block;
+    margin: 0 auto;
+    padding : 5px 10px;
+    outline: 0;
+    border: 1px solid #333333;
+    background-color: transparent;
+    margin-bottom: 11rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.view:hover {
+    background-color: #333333;
+    color : white;
+}
+#banner {
+    width : 100%;
+}
+#banner > a > img {
+    display : block;
+    width: 100%;
+}
+/* interior*/
+
+#interior {
+    background: #d7d1ce;
+    text-align: center;
+    padding : 8rem 0;
+    position : relative;
+}
+
+#interior > .title {
+    padding-top : 4rem;
+}
+
+#interior> p {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 3rem 0 ;
+}
+
+
+#interior_wrap {
+  overflow: hidden;
+  position : relative;
+  height : 797px;
+}
+
+#interior_wrap > ul::after{
+    content: ""; display : block; clear: both;
+}
+
+#interior_wrap > ul {
+    width : 2400px;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+}
+
+#interior_wrap > ul > li {
+    box-sizing: border-box;
+    float : left;
+    width : 30%;
+    opacity: 0.6;
+    padding : 1%;
+}
+
+#interior_wrap > ul > li > a > img {
+    box-sizing: border-box;
+    display : block;
+    border: 20px solid #c7bdb9;
+}
+
+#interior_wrap > ul > li.big {
+    width : 40%;
+    opacity: 1;
+
+}
+
+.in_img{
+    display : block;
+    width : 100%;
+}
+
+#interior_wrap > ul > li.big > a > img{ 
+    box-sizing: border-box;
+    border: 20px solid white;
+}
+
+.in {
+    height : 797px;
+    position: relative;
+}
+
+.in > a {
+    position: absolute;
+    width : 95%;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+}
+
+.int_prev {
+    background: url(../images/prev.png) no-repeat;
+    width : 50px;
+    height : 80px;
+    position : absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    left : 5%;
+    cursor: pointer;
+}
+
+.int_next {
+    background: url(../images/next.png) no-repeat;
+    width : 50px;
+    height : 80px;
+    position : absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    right : 5%;
+    cursor: pointer;
+}
+
+
+/* Menu 시작 */
+
+#menu {
+    padding : 10rem 0;
+}
+
+#signature::after { display : block; content: ""; clear: both;} 
+#new_menu::after { display : block; content: ""; clear: both;} 
+
+#signature {
+    margin-bottom : 8em;
+}
+#signature > div { 
+    float : left;
+    width : 50%;
+}
+
+#new_menu > div {
+    float : left;
+    width : 50%;
+}
+
+.txt_left {
+    box-sizing: border-box;
+    padding-left : 3rem;
+    margin-top : 1em;
+}
+
+.txt_right {
+    box-sizing: border-box;
+    margin-top: 17em;
+    text-align: right;
+    padding-right : 3rem;
+}
+
+.menu_p {
+    font-size : 2rem;
+    margin-bottom : 8rem;
+    line-height : 1.6;
+}
+
+.more {
+    display : block;
+    padding : 0.5em 1em;
+    margin : 2em 0;
+    color : white;
+    outline: 0;
+    border : 1px solid #a48b81;
+    background-color: #a48b81;
+    margin-bottom: 10em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.more:hover {
+    border : 1px solid #a48b81;
+    background-color : #fff;
+    color : #a48b81;
+
+}
+.menu_span {
+    display : block;
+}
+.btn_right {
+    float : right;
+}
+
+#store {
+    width : 100%;
+}
+#store > a > img {
+    display : block;
+    width: 100%;
+}
+
+.img_left {
+    box-shadow: 15px 15px 0px #c5bbb6;
+}
+
+.img_left:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+.img_right:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+
+}
+.img_right {
+    box-shadow: -15px 15px 0px #c5bbb6;
+}
+/* footer */
+
+#footer {
+    background: #c2a999;
+    color : white;
+    line-height : 1.6;
+    font-size : 1.4rem;
+}
+
+#ft_menu > li {
+    float : left;
+    margin-right: 1em;
+}
+
+#ft_menu::after {
+    display : block; content: ""; clear: both;
+}
+
+.ft_wrap {
+    width : 1300px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}

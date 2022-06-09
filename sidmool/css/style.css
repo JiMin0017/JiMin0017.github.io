@@ -1,0 +1,675 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'NEXON', serif;
+    color : #40413f;
+    font-size: 1.6rem;
+}
+
+a {
+    color : inherit;
+    text-decoration: none;
+    display : block;
+}
+
+.wrap {
+    width : 1300px;
+    margin : 0 auto;
+}
+
+
+button {
+    display: block;
+    background: transparent;
+    outline: 0;
+    border: 0;
+}
+/* HOME */
+#header {
+    width : 100%;
+    height : 8rem;
+    background: rgba(255,255,255,0.5);
+    padding : 0 3em;
+    position: fixed;
+    top : 0;
+    left : 0;
+    z-index: 9999;
+    box-sizing: border-box;
+    transition : all 0.4s ease-in-out;
+}
+
+#header::after {
+    display : block; content: ""; clear: both;
+}
+#logo {
+    display : block;
+    float : left;
+}
+
+#logo > img {
+    display : block;
+    padding-left : 3em;
+}
+#nav {
+    font-family: 'GowunBatang-Regular';
+    width : 60%;
+    line-height: 5em;
+    margin : 0 auto;
+}
+
+#nav::after {
+    content: ""; display : block; clear: both;
+}
+#nav > li {
+    float : left;
+    width : 20%;
+    text-align: center;
+}
+#nav > li > a {
+    position: relative;
+}
+#nav > li > a::before {
+    content: "";
+    position : absolute;
+    display: block;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    z-index: -1;
+    background-color: #fff;
+    opacity: 0;
+    transform: scaleX(.3);
+    transition: all 0.3s ease-in-out;
+}
+
+#nav > li > a:hover::before {
+    opacity: 1;
+    background-color: #a2c38e;
+    transform: scaleX(1);
+}
+
+#nav > li > a:hover {
+    color : white;
+}
+.nav-up {
+    top : -8rem!important;
+}
+/* Main Banner Slide */
+#mainbanner {
+    height : 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#mainbanner_list > div {
+    position:absolute;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.on {
+    opacity: 1!important;
+}
+.banner1 {
+    z-index: 99;
+}
+
+.banner2 {
+    z-index: 9;
+}
+
+#indicator {
+    position: absolute;
+    bottom : 10%;
+    left : 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+#indicator::after {
+    content : ""; display : block; clear: both;
+}
+
+#indicator > li {
+    float : left;
+    width : 20px;
+    height : 20px;
+    border-radius: 50%;
+    margin: 0 15px;
+    background: rgb(219, 219, 219);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+
+#indicator > li:hover {
+    background: rgb(185, 185, 185);
+    opacity: 1;
+}
+
+#indicator > li>span {
+    display : none;
+}
+
+#indicator > li.ion {
+    background: rgb(185, 185, 185);
+    width : 50px;
+    border-radius: 10px;
+    opacity: 1;
+    cursor: default;
+}
+/* BANNER1 */
+
+.banner1 > a > div {
+    box-sizing: border-box;
+    background: url(../images/banner1_bg.jpg) no-repeat;
+    background-size: cover;
+    width : 100vw;
+    height : 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#banner1_txt {
+    position: absolute;
+    top : 50%;
+    left : 10%;
+    transform: translateY(-50%);
+}
+
+#banner1_txt > h1 {
+    font-size: 4.5rem;
+    color : #4a5c38;
+    font-family: 'GowunBatang-Regular';
+    padding-bottom: 3rem;
+}
+
+#banner1_txt > h2 {
+    font-size: 2rem;
+    padding-bottom : 3rem;
+    font-weight: 600;
+}
+
+#banner1_txt > p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+#banner1_txt > button {
+    font-family: 'NEXON';
+    font-size: 1.5rem;
+    display : block;
+    background: #39472a;
+    color : white;
+    padding : 8px 20px;
+    border-radius: 20px;
+    margin-top: 3rem;
+}
+
+
+#banner_img {
+    display: block;
+    width : 60%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10%;
+    right: -5%;
+}
+
+.banner2 > a > div {
+    box-sizing: border-box;
+    background: url(../images/banner2_bg.jpg) no-repeat;
+    background-size: cover;
+    width : 100vw;
+    height : 100vh;
+    position: relative;
+    padding : 15px;
+}
+
+#banner2_img {
+    display: block;
+    width : 15%;
+    box-sizing: border-box;
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    left : 15%;
+}
+
+#banner2_txt {
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    right : 15%;
+    text-align: right;
+}
+
+#banner2_txt > h1 {
+    font-size: 4.5rem;
+    color : #e2caba;
+    font-family: 'GowunBatang-Regular';
+    padding-bottom: 3rem;
+    line-height: 1.2;
+}
+
+#banner2_txt > h2 {
+        font-size: 2rem;
+        color : #c9b7ab;
+        padding-bottom : 3rem;
+        font-weight: 600;
+}
+
+#banner2_txt > p {
+    font-size: 1.6rem;
+    color : #e9e0e0;
+    line-height: 1.6;
+}
+
+#banner2_txt > button {
+    font-family: 'NEXON';
+    font-size: 1.5rem;
+    display: block;
+    float : right;
+    background: #4d372c;
+    color : white;
+    padding : 8px 20px;
+    border-radius: 20px;
+    margin-top: 3rem;
+}
+
+
+/* BANNER3 */
+.banner3 > a > div {
+    width : 100vw;
+    height : 100vh;
+    background: url(../images/banner3_bg.jpg) no-repeat;
+    background-size: cover ;
+    position : relative;
+}
+
+#banner3_img {
+    display: block;
+    width: 15%;
+    box-sizing: border-box;
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    right: 18%;
+}
+
+#banner3_txt {
+    position: absolute;
+    top : 50%;
+    left : 10%;
+    transform: translateY(-50%);
+}
+
+#banner3_txt > h1 {
+    font-size: 4.5rem;
+    color : #5e5145;
+    font-family: 'GowunBatang-Regular';
+    padding-bottom: 3rem;
+    line-height : 1.2;
+}
+
+#banner3_txt > h2 {
+    font-size: 2rem;
+    color: #6e5127;
+    padding-bottom : 3rem;
+    font-weight: 600;
+}
+
+#banner3_txt > p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color : #706b69;
+}
+
+#banner3_txt > button {
+        font-family: 'NEXON';
+        font-size: 1.5rem;
+        display : block;
+        background: #91875e;
+        color : white;
+        padding : 8px 20px;
+        border-radius: 20px;
+        margin-top: 3rem;
+}
+
+/* BEST SELLING */
+#best {
+    box-sizing: border-box;
+    padding: 4rem 10rem;
+}
+.title1 {
+    font-family: 'GowunBatang-Regular';
+    text-align: center;
+    font-size : 4rem;
+    line-height : 2.2;
+    margin-bottom: 20px;
+}
+
+.selling_list::after {
+    content :""; display :block; clear: both;
+}
+
+.selling_list {
+    width : 100%;
+}
+
+.selling_list > li {
+    box-sizing: border-box;
+    float : left;
+    width : 25%;
+    padding : 1%;
+    position: relative;
+
+}
+
+.selling_list > li > a > img {
+    display : block;
+    width : 100%;
+    opacity: 1;
+    transition : all 0.3s ease-in-out;
+}
+
+.selling_list > li > a:hover{
+    opacity: 0.7;
+}
+
+.selling_list >li>a:before, .selling_list >li>a:after{
+    content : "";
+    background: #fff;
+    position : absolute;
+    left : 50%; top : 50%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    transition : all 0.4s ease;
+}
+
+.selling_list >li >a:before {
+    width : 50px; height : 3px; left : 100%;
+}
+
+.selling_list > li >a:after {
+    width : 3px; height : 50px; top : 0%;
+}
+
+.selling_list>li >a:hover:before,
+.selling_list>li >a:hover:after {
+    opacity: 1;
+    left : 50%; top : 45%;
+}
+.selling_list > li > span {
+    display : block;
+    text-align: center;
+    padding : 20px 0;
+}
+
+
+/* PRODUCT */
+
+.product::after { content: ""; display: block; clear: both;}
+
+.product > div {
+    width : 50%;
+    float : left;
+}
+
+#img_box > a > img {
+    display : block;
+    width : 100%;
+}
+
+#txt_box {
+    text-align: center;
+    line-height: 1.6;
+    margin-top : 5%;
+}
+
+#txt_box > h2 {
+    font-family: 'GowunBatang-Regular';
+    font-size: 3.8rem;
+    margin: 2rem 0;
+}
+
+#txt_box > h3 {
+    margin-bottom : 3rem;
+    font-size: 2.2rem;
+}
+
+#txt_box > p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.pro_btn {
+    font-family: 'NEXON';
+    font-size: 1.5rem;
+    margin: 0 auto;
+    background: #9e9587;
+    border-radius: 20px;
+    padding : 8px 20px;
+    color : white;
+    cursor: pointer;
+}
+
+.pro_btn:hover {
+    background: #faf9f7;
+    color : #91875e;
+    transition: all 0.4s ease-in-out;
+}
+/* ECO PHILOSHOPY */
+#eco {
+    box-sizing: border-box;
+    background: #b0d799;
+    padding : 15px;
+}
+
+#eco > div {
+    box-sizing: border-box;
+
+    border: 2px solid white;
+}
+#eco_logo {
+    display : block;
+    margin:  0 auto;
+    padding:  20px 0;
+}
+
+#eco_typo {
+    display: block;
+    margin: 35px auto;
+    margin-top: 50px;
+    opacity: 0;
+}
+
+#eco_btn {
+    margin: 15px auto;
+    font-size: 1.5rem;
+    font-family: 'NEXON';
+    background: #6d9158;
+    border-radius: 20px;
+    padding : 8px 20px;
+    color : white;
+    cursor: pointer;
+}
+
+#eco_btn:hover {
+    background: white;
+    color : #6d9158;
+    transition: all 0.4s ease-in-out;
+}
+#eco > div > a > p {
+    text-align: center;
+    color: #616a5c;
+    font-size: 2.2rem;
+    padding : 20px 0;
+}
+/* Recommend */
+#recommend {
+    padding : 4rem 0;
+}
+
+#recommend > .wrap > .title1 {
+    margin-bottom: 6rem;
+}
+
+.rec_wrap {
+    margin-bottom: 8rem;
+}
+
+.rec_wrap::after {
+    content :""; display : block; clear: both;
+}
+.rec_wrap > div {
+    float : left;
+}
+
+.rec_wrap > div > a > img {
+    display : block;
+    margin: 0 auto;
+}
+
+.rec_wrap > div > a:hover > img {
+    opacity: 1;
+    animation : flash 3s;
+}
+
+.img3:hover > img {
+    opacity: 1;
+    animation : flash 3s;
+}
+.img3 > img {
+    display : block;
+    margin: 0 auto;
+    box-shadow: 15px 15px  #b7aca9;
+}
+
+.img2 {
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+.img1 > a > img {
+    display : block;
+    box-shadow: 15px 15px #b7aca9;
+}
+.img2 > a > img {
+    box-shadow: 15px 15px  #b7aca9;
+}
+.rec_wrap > div>  p {
+    text-align: center;
+    padding : 3em 0;
+}
+#recommend > .wrap > p {
+    padding: 3em 0 ;
+    text-align: center;
+}
+
+@keyframes flash {
+    0% {
+      opacity: .4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+/*Online Mall */
+#online {
+    background: #d5cecd;
+    padding : 10rem 0;
+}
+
+#online > .wrap {
+    background: #fff;
+    position: relative;
+    padding: 8em 2em;
+}
+
+#online_txt {
+    width : 50%;
+    text-align: center;
+    line-height: 1.5em;
+    margin-left: 2em;
+}
+
+#online_txt > h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 2em;
+    color : #5e5755;
+}
+
+#online_txt > p {
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
+}
+.banner_bx {
+    position: absolute;
+    top : -8%;
+    right : -2%;
+}
+
+.join_btn {
+    font-family: 'NEXON';
+    font-size: 1.5rem;
+    background:#757372;
+    border-radius: 25px;
+    color: white;
+    padding :0.7em 6em;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.join_btn:hover {
+    background: #f7f3f3;
+    color : #757372;
+    transition: all 0.4s ease-in-out;
+}
+#sns_banner {
+    background: url(../images/sns_banner.jpg) no-repeat;
+    background-size: cover;
+    height : 600px;
+}
+
+#sns_txt {
+    width : 50%;
+    margin-top: 150px; 
+    margin-right: 50px;
+    float : right;
+    text-align: center;
+    color: white;
+}
+
+.typing_text {
+    display : none;
+}
+
+
+.typing{
+    font-size: 4rem;
+    font-family: 'GowunBatang-Regular';
+    line-height: 2.5;
+}
+
+.typing_2 {
+    font-size: 2.3rem;
+    font-family: 'NEXON','serif';
+    padding : 20px 0;
+}
+#footer {
+    background-color: #7b7d75;
+    color: white;
+    padding : 2rem 0;
+}
+
+#footer > .wrap > p {
+    letter-spacing: 0;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}

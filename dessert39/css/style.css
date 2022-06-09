@@ -1,0 +1,514 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'S-CoreDream-Light',serif;
+    color : #333;
+    letter-spacing: -0.7px;
+    font-size: 1.6rem;
+}
+
+a {
+    display : block;
+    text-decoration: none;
+    color : inherit;
+}
+
+
+.wrap {
+    width : 1320px;
+    margin: 0 auto;
+}
+
+
+.btn {
+    display : block;
+    margin: 3em  auto 0;
+    border: 1px solid #333;
+    outline: 0;
+    background-color: transparent;
+    text-align: center;
+    padding : 0.5em 1em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background : #333;
+    color : white;
+}
+/* HOME */
+#header {
+    box-sizing: border-box;
+    width : 100%;
+    height : 8rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color : white;
+    position: fixed;
+    padding-left : 5rem;
+    top : 0;
+    left : 0;
+    z-index: 9999;
+    transition: top 0.2s ease-in-out;
+}
+#header::after {
+    display : block;
+    content: "";
+    clear: both;
+}
+
+#header > #logo {
+    width : 15%;
+    float : left;
+    display : block;
+}
+
+#header > a > img {
+    display : block;
+    padding-top : 1.5rem;
+}
+
+#nav {
+    width : 60%;
+    line-height: 8rem;
+    margin: 0 auto;
+}
+
+#nav::after {
+    content : "";
+    display : block;
+    clear: both;
+}
+
+#nav > li {
+    float : left;
+    width : 20%;
+    text-align: center;
+    position:relative;
+}
+
+#nav>li>a::after {
+    position: absolute;
+    top : 95%;
+    left : 50%;
+    transform: translateX(-50%);
+    content: "";
+    display : block;
+    width : 0;
+    height : 5px;
+    background-color:#cb9b34;
+    transition : all 1s;
+}
+
+#nav>li>a:hover::after {
+    width : 50%;
+}
+
+.nav-up {
+    top : -8rem !important;
+}
+/* 메인 배너 슬라이드 */
+
+#mainbanner_slide {
+    width : 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#mainbanner_slide > ul {
+    width : 300%;
+    margin-left : 0;
+}
+
+#mainbanner_slide > ul::after {
+    display : block; clear: both; content: "";
+}
+
+#mainbanner_slide > ul > li {
+    float : left;
+    width : 33.33%;
+}
+
+#mainbanner_slide > ul > li > a > img {
+    display : block;
+    width : 100%;
+}
+
+#indicator {
+    position: absolute;
+    bottom : 10%;
+    left : 50%;
+    transform: translateX(-50%);
+}
+
+#indicator::after {
+    content : ""; display: block; clear: both;
+}
+#indicator > li {
+    float : left;
+    width : 90px;
+    height : 7px;
+    background: white;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+#indicator > li:hover {
+    background : white;
+}
+#indicator > li > span {
+    display : none;
+}
+
+#indicator > li.on {
+    background: white;
+    opacity: 0.9;
+    cursor: default;
+}
+/* notice */
+
+#notice_list::after {
+    content : "";
+    display : block;
+    clear: both;
+}
+#notice_list > li {
+    font-size: 1.8rem;
+    float : left;
+    width : 50%;
+    text-align: center;
+    padding : 4rem 0;
+}
+
+#notice_list:first-child {
+    margin-left : 4rem;
+}
+
+#notice_list:last-child {
+    margin-right : 4rem;
+}
+
+#notice_list > li > a > span {
+    font-family: 'S-CoreDream-Regular';
+    font-weight: 900;
+}
+
+#notice_list > li > a:hover {
+    color : #cb9b34;
+}
+
+/* 배너 */
+.banner > a > img {
+    display : block;
+    width: 100%;
+}
+
+/* 시그니처 메뉴 */
+#signature {
+    padding : 20rem 0;
+    overflow: hidden;
+}
+
+.sig_wrap {
+    margin-bottom: 350px;
+}
+
+.sig_wrap::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.left {
+    float : left;
+}
+
+.right {
+    float : right;
+
+}
+.img_box > img {
+    display : block;
+    padding : 1em;
+    border: 2px solid #deba6d;
+
+}
+
+.img_box {
+    position : relative;
+    z-index: 99;
+}
+
+.first::after {
+    content : "";
+    display : block;
+    width : 200%;
+    height : 130%;
+    background-color: #e5e5e5;
+    position : absolute;
+    top : -12%;
+    left : -140%;
+    z-index: -1;
+}
+
+.last::after {
+    content : "";
+    display : block;
+    width : 200%;
+    height : 130%;
+    background-color: #e5e5e5;
+    position : absolute;
+    top : -12%;
+    right : -140%;
+    z-index: -1;
+}
+.left > img {
+    margin-left : 7em;
+}
+
+.right > img {
+    margin-right : 7em;
+}
+
+.txt_box_1 {
+    text-align: center;
+    margin-right : 5em;
+    padding-top : 4em;
+}
+
+.txt_box_2 {
+    text-align: center;
+    margin-left: 7em ;
+    padding-top : 5em;
+}
+
+.txt_box_1 > p {
+    line-height : 1.5;
+    margin-bottom : 1.5em;
+    font-size: 1.1em;
+}
+
+.txt_box_2 > p {
+    font-size : 1.1em;
+    line-height :1.5;
+    margin-bottom: 1.5em;
+}
+.title2 {
+    font-family: 'HallymMjo-Regular',serif;
+    font-weight: 900;
+    font-size : 4rem;
+    color : #cb9b34;
+    line-height: 1.5;
+    margin-bottom : 4rem;
+}
+.hide1 {
+    opacity: 0;
+    margin-top: 100px;
+}
+
+.hide2 {
+    opacity: 0;
+    margin-top: 100px;
+}
+/*Best 시작*/ 
+#best {
+    padding-bottom : 8em;
+}
+
+.title1 {
+    font-family:  'S-CoreDream-Regular',serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 4rem;
+    margin-top : 4em;
+    line-height: 1.8;
+}
+
+.p {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3em;
+}
+
+#best > .bg_bx {
+    width : 100%;
+    padding : 3em 0;
+    background : #e5e5e5;
+}
+
+.best_menu {
+    width : 100%;
+}
+
+.best_menu::after {
+    content : "";
+    display : block;
+    clear: both;
+}
+.best_menu > li {
+    box-sizing: border-box;
+    padding : 0 15px;
+    width : 25%;
+    float : left;
+}
+
+.best_menu > li > a > img {
+    display : block;
+    width : 100%;
+    transition : all 0.4s;
+}
+
+.best_menu > li > a > img:hover {
+    animation : imgrotate 1s;
+}
+
+@keyframes imgrotate {
+    0% {transform : rotate(8deg);}
+    100% {transform : rotate(0)}
+}
+
+.best_menu > li > span {
+    display : block;
+    text-align: center;
+    padding-top : 3em;
+}
+
+/* Intro 시작 */
+
+#intro > .bg_bx {
+    position :relative;
+}
+
+.bg_bx::after {
+    content : "";
+    display : block;
+    width : 100%;
+    height : 80%;
+    background-color: #e5e5e5;
+    position : absolute;
+    top : 10%;
+    left : 0%;
+    z-index: -1;
+}
+
+#intro > .bg_bx > .wrap > div {
+    box-sizing: border-box;
+    float : left;
+    width : 31.33%;
+    border: 1px solid #6b4d42;
+    margin: 1%;
+    margin-top : 150px;
+    opacity: 0;
+    padding : 4em 0;
+    z-index: 99;
+    
+}
+#intro > .bg_bx > .wrap > div  > p {
+    line-height: 1.4;
+    font-size: 1.6rem;
+}
+
+#intro > .bg_bx > .wrap::after {
+    content : ""; display : block; clear: both;
+}
+
+#intro > .bg_bx > .wrap > div > .title2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.icon {
+    display: block;
+    margin: 0 auto;
+    margin-bottom : 3em;
+}
+
+
+/* interior 시작 */
+
+#interior > .bg_bx {
+    position: relative;
+}
+
+.bg_bx::after {
+    content : "";
+    display : block;
+    width : 100%;
+    height : 80%;
+    background-color: #e5e5e5;
+    position : absolute;
+    top : 10%;
+    left : 0%;
+    z-index: -1;
+}
+
+
+.interior_main {
+    display : block;
+    max-width : 1000px;
+    width : 100%;
+    margin: 6rem auto;
+    padding : 1.5rem;
+    border: 2px solid #deba6d;
+    z-index: 99;
+}
+
+
+#gallery::after {
+    content : ""; display :block; clear: both;
+}
+#gallery {
+    width : 100%;
+}
+#gallery > li {
+    box-sizing: border-box;
+    float : left;
+    width : 33.33%;
+    padding : 20px;
+    cursor: pointer;
+}
+
+#gallery > li > a > img {
+    width : 100%;
+    filter: grayscale(100%);
+    transition: .1s ease-in-out;
+}
+
+#gallery > li > a > img:hover {
+    filter: grayscale(0);
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+/* Franchise */
+#franchise {
+    padding : 5em 0;
+}
+
+#franchise > .title1 {
+    margin-bottom : 2em;
+}
+
+/* Footer */
+#footer {
+    background-color: #919191;
+    color : white;
+    padding : 4rem 0;
+}
+
+#ft_menu::after {
+    content: ""; clear: both; display : block;
+}
+
+#ft_menu {
+    padding-bottom: 1rem;
+}
+#ft_menu > li {
+    float : left;
+    margin-right : 1rem;
+    font-weight: bold;
+}
+
+#footer > .wrap > p {
+    line-height: 1.6;
+}
